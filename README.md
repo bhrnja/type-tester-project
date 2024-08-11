@@ -27,7 +27,7 @@ can be used on any web and type foundry projects. I'll be accomplishing this my 
 small. The first attainable goal will be to achieve a working type tester that can
 change the **font family** and **size** of the typography.
 
-One my initial goal has been met, I will begin to add additional features and attributes
+Once my initial goal has been met, I will begin to add additional features and attributes
 like **Weight, Width, and Italic Angle / Slant**.
 
 ## Any future additions?
