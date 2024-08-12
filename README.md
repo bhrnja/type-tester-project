@@ -1,6 +1,6 @@
 # Type Tester Project
 
-This is a public project to create a **simple** and **open source**, component based
+This is a public project to create **simple** and **open source**, component based
 type testers used to interactively change attributes of Typography.
 
 ## What do these attributes include?
