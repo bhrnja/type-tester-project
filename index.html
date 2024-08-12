@@ -3,15 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/style.css"> 
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/fonts.css"> 
     <title>Type Tester</title>
 </head>
 <body>
 
-    <div>
+    <div class="container">
 
-        <h1>Tester</h1>
-
+        <div class="type-tester">
+            <div class="tester-element tester-title">
+                <h1>Type Tester</h1>
+            </div>
+            <div class="tester-element tester-font-family">
+                <select name="font-family" id="font-family">
+                    <option value="serif">Serif</option>
+                    <option value="sans-serif">Sans Serif</option>
+                    <option value="monospace">Monospace</option>
+                </select>
+            </div>
+            <div class="tester-element tester-font-size">
+                <input type="range" min="6" max="150" value="48">
+            </div>
+            <div class="tester-element tester-input">
+                <input type="text" placeholder="Type here...">
+            </div>
+        </div>
+        
     </div>
 
     <script src="./scripts/main.js"></script>
