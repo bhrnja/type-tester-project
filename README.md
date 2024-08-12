@@ -23,7 +23,7 @@ And, many more attributes.
 ## What are your goals?
 
 First and foremost, I'm setting out to create a **free** and **open source** type tester which
-can be used on any web and type foundry projects. I'll be accomplishing this my starting
+can be used on any web and type foundry projects. I'll be accomplishing this by starting
 small. The first attainable goal will be to achieve a working type tester that can
 change the **font family** and **size** of the typography.
 
