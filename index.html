@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/style.css">
-    <link rel="stylesheet" href="./styles/fonts.css"> 
     <title>Type Tester</title>
 </head>
 <body>
@@ -12,22 +11,30 @@
     <div class="container">
 
         <div class="type-tester">
-            <div class="tester-element tester-title">
-                <h1>Type Tester</h1>
-            </div>
-            <div class="tester-element tester-font-family">
-                <select name="font-family" id="font-family">
+
+            <div class="tester-family">
+                <p>Font Family</p>
+                <select id="tester-font-family" class="tester-font-family" onchange="changeFont (this);">
+                    <option value="sans-serif" selected="true">Sans Serif</option>
                     <option value="serif">Serif</option>
-                    <option value="sans-serif">Sans Serif</option>
                     <option value="monospace">Monospace</option>
                 </select>
             </div>
-            <div class="tester-element tester-font-size">
-                <input type="range" min="6" max="150" value="48">
+
+            <div class="tester-size">
+                <p>Font Size</p>
+                <input id="tester-font-size" class='tester-font-size' type="range" min="26" max="144" value="72">
             </div>
-            <div class="tester-element tester-input">
-                <input type="text" placeholder="Type here...">
+
+            <div class="tester-spacing">
+                <p>Font Spacing</p>
+                <input id="tester-font-spacing" class='tester-font-fontspacing' type="range" min="-12" max="24" value="0">
             </div>
+
+            <div class="font-tester-input">
+                <input id="tester-input" class="tester-input" type="text" placeholder="Type here...">
+            </div>
+
         </div>
         
     </div>
