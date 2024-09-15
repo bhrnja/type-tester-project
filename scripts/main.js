@@ -1,21 +1,28 @@
+// Font Family
+let changeFont = function(font){
+      document.getElementById("testerArea").style.fontFamily = font.value;
+}
+
 // Font Size
-const sizeSlider = document.getElementById('tester-font-size');
+const sizeSlider = document.getElementById('testerSize');
 
 sizeSlider.addEventListener('input', function() {
     let size = sizeSlider.value;
-    document.getElementById('tester-input').style.fontSize = size + 'px';
+    document.getElementById('testerArea').style.fontSize = size + 'px';
 });
 
-// Font Family
-let changeFont = function(font){
-    console.log(font.value)
-      document.getElementById("tester-input").style.fontFamily = font.value;
-  }
-  
-  // Font Spacing
-const spaceSlider = document.getElementById('tester-font-spacing');
+// Letter Tracking
+const trackingSlider = document.getElementById('testerTracking');
 
-spaceSlider.addEventListener('input', function() {
-    let size = spaceSlider.value;
-    document.getElementById('tester-input').style.letterSpacing = size + 'px';
+trackingSlider.addEventListener('input', function() {
+    let size = trackingSlider.value;
+    document.getElementById('testerArea').style.letterSpacing = size + 'px';
+});
+
+// Line Leading
+const leadingSlider = document.getElementById('testerLeading');
+
+leadingSlider.addEventListener('input', function() {
+    let size = leadingSlider.value;
+    document.getElementById('testerArea').style.lineHeight = size + '%';
 });

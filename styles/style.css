@@ -1,3 +1,4 @@
+/* Necessary Styling */
 *,
 *::before,
 *::after {
@@ -5,42 +6,55 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 .container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
-
-.type-tester {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-/* .tester-family {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 
 }
-
-.tester-size {
-
+.typeTester {
+    display: flex;
+    flex-direction: row;
+    gap: 1.25rem;
+}
+.styleArea {
+    resize: none;
+    width: 90vw;
+    font-size: 4.5rem;
+    text-align: center;
+    line-height: 1.15;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border: none;
+    overflow: hidden;
+}
+.styleArea:focus {
+    outline: none;
 }
 
-.tester-spacing {
-
-} */
-
-.font-tester-input {
-  max-width: 100wv;
+/* Customizable Styling */
+.styleFamily {
+    border: none;
+    text-indent: none;
+    font-size: 1rem;
+    outline: none;
+    color: #111111;
+    border-radius: 0.5rem;
+    padding: .375rem;
+    cursor: pointer;
 }
 
-.font-tester-input > .tester-input {
-  font-size: 4.5rem;
-  text-align: center;
-  border: none;
-  overflow: visible;
+input[type="range"] {
+    cursor: pointer;
+}
 
+input[type=range]::-webkit-slider-thumb {
+    color: #111111;
+}
+
+.fontSize > p, .letterTracking > p, .lineLeading > p {
+    font-family: sans-serif;
+    font-size: 1rem;
 }
