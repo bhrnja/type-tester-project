@@ -7,8 +7,11 @@ type testers used to interactively change attributes of Typography.
 
 Normally a type tester includes adjustable attributes such as:
 
-- Font Family
-- Size
+~- Font Family~
+~- Size~
+~- Letter Spacing~
+~- Line Height~
+
 - Weight
 - Width
 - Italic Angle / Slant
@@ -18,6 +21,8 @@ Normally a type tester includes adjustable attributes such as:
 - Diacritics
 - Small Caps
 
+_Strikethroughs indicate implemented features._
+
 And, many more attributes.
 
 ## What are your goals?
@@ -25,7 +30,9 @@ And, many more attributes.
 First and foremost, I'm setting out to create a **free** and **open source** type tester which
 can be used on any web and type foundry projects. I'll be accomplishing this by starting
 small. The first attainable goal will be to achieve a working type tester that can
-change the **font family** and **size** of the typography.
+~change the **font family** and **size** of the typography.~
+
+Thankfully, the initial goal has been achieved!
 
 Once my initial goal has been met, I will begin to add additional features and attributes
 like **Weight, Width, and Italic Angle / Slant**.

@@ -1,59 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Type Tester</title>
     <link href="./styles/style.css" rel="stylesheet"
-</head>
-<body>
-
-    <div class = container>
-
-        <div class = typeTester>
-
-            <div class = fontFamily>
-                
-                <select id="testerFamily" class="styleFamily" onchange="changeFont (this)">
-
-                    <option value="sans-serif" selected="true">Sans Serif</option>
-                    <option value="serif">Serif</option>
-                    <option value="monospace">Monospace</option>
-                </select>
-
-            </div>
-
-            <div class="fontSize">
-                
-                <p>Font Size</p>
-                <input id="testerSize" class="styleSize" type="range" min="24" max="144" value="72">
-
-            </div>
-
-            <div class="letterTracking">
-
-                <p>Letter Spacing</p>
-                <input id="testerTracking" class="styleTracking" type="range" min="-5" max="20" value="0">
-                
-            </div>
-
-            <div class="lineLeading">
-
-                <p>Line Height</p>
-                <input id="testerLeading" class="styleLeading" type="range" min="60" max="150" value="100.15">
-                
-            </div>
-
+  </head>
+  <body>
+    <div class="container">
+      <div class="typeTester">
+        <div class="fontFamily">
+          <select
+            id="testerFamily"
+            class="styleFamily"
+            onchange="changeFont (this)"
+          >
+            <option value="sans-serif" selected="true">Sans Serif</option>
+            <option value="serif">Serif</option>
+            <option value="monospace">Monospace</option>
+          </select>
         </div>
 
-        <div class="fontArea">
-                
-            <textarea id="testerArea" class="styleArea" rows="3" maxlength="30" style="font-family: sans-serif;">Change the font attributes!</textarea>
-
+        <div class="fontSize">
+          <p>Font Size</p>
+          <input
+            id="testerSize"
+            class="styleSize"
+            type="range"
+            min="24"
+            max="144"
+            value="72"
+          />
         </div>
 
+        <div class="letterTracking">
+          <p>Letter Spacing</p>
+          <input
+            id="testerTracking"
+            class="styleTracking"
+            type="range"
+            min="-5"
+            max="20"
+            value="0"
+          />
+        </div>
+
+        <div class="lineLeading">
+          <p>Line Height</p>
+          <input
+            id="testerLeading"
+            class="styleLeading"
+            type="range"
+            min="60"
+            max="150"
+            value="100.15"
+          />
+        </div>
+      </div>
+
+      <div class="fontArea">
+        <textarea
+          id="testerArea"
+          class="styleArea"
+          rows="3"
+          maxlength="30"
+          style="font-family: sans-serif"
+        >
+Change the font attributes!</textarea
+        >
+      </div>
     </div>
 
     <script src="./scripts/main.js"></script>
-</body>
+  </body>
 </html>
